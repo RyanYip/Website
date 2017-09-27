@@ -1,0 +1,93 @@
+body{
+  font-size:1.1rem;
+  margin:0;
+  padding:0;
+  background-image: url("../images/vintage-concrete.jpg");
+}
+
+.wrapper {
+  margin-left:15%;
+  margin-right:15%;
+}
+
+.navbar {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#444;
+}
+
+.navbar li {
+  float:left;
+}
+
+.navbar li a {
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  transition:1.0s;
+}
+
+.navbar li a:hover {
+  background-color:#777;
+  cursor:pointer;
+}
+
+.navbar li a:link {
+  color:white;
+}
+
+.active {
+  background-color:#111;
+}
+
+.title {
+  text-align:center;
+  color:#003380;
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+a:link {
+  color:black;
+}
+
+a:hover {
+  color:gray;
+}
+
+a:active {
+  color:orange;
+}
+
+.heading {
+  overflow:hidden;
+  background-color:#cc7f7f;
+}
+
+#gameTable {
+  border-collapse:collapse;
+  margin:auto;
+  text-align:center;
+}
+
+#gameTable th, td {
+  border:2px solid #ccc;
+}
+
+.name {
+  width:400px;
+}
+.playtimeForever {
+  width:200px;
+}
+
+#searchBox {
+  display:block;
+  margin:0 auto;
+  margin-bottom:10px;
+}
+
