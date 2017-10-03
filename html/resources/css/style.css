@@ -63,7 +63,7 @@ a:active {
   color:orange;
 }
 
-.heading {
+#gameTable thead {
   overflow:hidden;
   background-color:#cc7f7f;
 }
@@ -91,3 +91,6 @@ a:active {
   margin-bottom:10px;
 }
 
+.pointer {
+  cursor:pointer;
+}

@@ -3,3 +3,4 @@ html/resources/images/
 html/resources/thumbnails/
 html/test.html
 scripts/config.py
+scripts/__pycache__

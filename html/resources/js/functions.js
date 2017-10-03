@@ -1,15 +1,15 @@
 function filterGames() {
   var input = document.getElementById("searchBox").value.toUpperCase();
   var gameTable = document.getElementById("gameTable");
-  var columnList = gameTable.getElementsByTagName("tr");
+  var rows = gameTable.getElementsByTagName("tr");
 
-  for (var i = 0; i < columnList.length; i++) {
-    var gameColumn = columnList[i].getElementsByTagName("td");
+  for (var i = 0; i < rows.length; i++) {
+    var gameColumn = rows[i].getElementsByTagName("td");
     if (gameColumn[1]) {
       if (gameColumn[1].innerHTML.toUpperCase().indexOf(input) > -1) {
-        columnList[i].style.display = "";
+        rows[i].style.display = "";
       } else {
-        columnList[i].style.display = "none";
+        rows[i].style.display = "none";
       }
     }
   }
