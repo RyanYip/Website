@@ -22,7 +22,7 @@
       <ul>
         <li>Create a Python script to pull data from the Steam Web API and store it into a MySQL database. The main problems I had with this step were:
           <ul>
-            <li>Surrounding the variables with quotes so my insert statements would work correctly. I couldn't figure out the problem with the error message that was being output. (An example of this issue: <b><i>INSERT INTO games(name, image) VALUES "{0}", "{1}"</i></b>. Without the quotations my database would throw an error like <b><i>"Unknown column '[game title]' in 'field list'"</i></b> which was not very helpful at all since it <i>looked</i> like the game's title was surrounded in quotes already).</li>
+            <li>Surrounding the variables with quotes so my insert statements would work correctly since the fields are "Strings". This threw me off since some fields needed it and others didn't. Eventually I figured out that the string fields required quotes, though I couldn't figure out the problem with the error message that was being output. (An example of this issue: <b><i>INSERT INTO games(name, image) VALUES "{0}", "{1}"</i></b>. Without the quotations my database would throw an error like <b><i>"Unknown column '[game title]' in 'field list'"</i></b> which was not very helpful at all since it <i>looked</i> like the game's title was surrounded in quotes already).</li>
             <li>MySQL defaulting to latin-1 which threw errors inserting games with certain characters in the name. Figuring out how to convert the database to utf8 and ensuring further connections use utf8 was quite painful because it kept coming up everytime I wantd to access my database from a different script/file.</li>
           </ul>
         </li>
