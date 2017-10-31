@@ -5,11 +5,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
   </head>
   <body>
-    <ul class="navbar">
-      <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="gaming.php">Gaming</a></li>
-      <li style="float:right"><a href="about.html">About</a></li>
-    </ul>
+    <?php include('navbar.html')?>
     <div class="wrapper">
     <h1 class="title">Gaming Profiles</h1>
     <div>
@@ -103,11 +99,13 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 ';
 }
 ?>
-      </tbody>
-      </table>
+        </tbody>
+        </table>
+      </div>
     </div>
-  </div>
-  <script src="resources/js/functions.js"></script>
-  <script src="resources/js/sorttable.js"></script>
+    <script src="resources/js/functions.js"></script>
+    <script src="resources/js/sorttable.js"></script>
+    <script src="resources/js/jquery"></script>
+    <script src="resources/js/navbar.js"></script>
   </body>
 </html>

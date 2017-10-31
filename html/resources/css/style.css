@@ -10,7 +10,7 @@ body{
   margin-right:15%;
 }
 
-.navbar {
+#navbar {
   list-style-type:none;
   margin:0;
   padding:0;
@@ -18,11 +18,11 @@ body{
   background-color:#444;
 }
 
-.navbar li {
+#navbar li {
   float:left;
 }
 
-.navbar li a {
+#navbar li a {
   display:block;
   color:white;
   text-align:center;
@@ -31,17 +31,18 @@ body{
   transition:1.0s;
 }
 
-.navbar li a:hover {
+#navbar li a:hover {
   background-color:#777;
   cursor:pointer;
 }
 
-.navbar li a:link {
+#navbar li a:link {
   color:white;
 }
 
-.active {
+#active {
   background-color:#111;
+  transition:1.0s;
 }
 
 .title {
@@ -52,7 +53,7 @@ body{
 }
 
 a:link {
-  color:black;
+  color:midnightblue;
 }
 
 a:hover {
